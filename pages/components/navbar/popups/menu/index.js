@@ -79,73 +79,76 @@ function ResponsiveDialog() {
       });
 
     return (
-        <Dialog onClose={handleClose} 
-            PaperProps={{ classes: {root: classes.paper } }}
-            aria-labelledby="customized-dialog-title" 
-            open={open} 
-            className={styles.titleContainer}
-        >
-            <DialogTitle id="customized-dialog-title" onClose={handleClose} >
-                Event
-            </DialogTitle>
+        <div>
+            
+        </div>
+        // <Dialog onClose={handleClose} 
+        //     PaperProps={{ classes: {root: classes.paper } }}
+        //     aria-labelledby="customized-dialog-title" 
+        //     open={open} 
+        //     className={styles.titleContainer}
+        // >
+        //     <DialogTitle id="customized-dialog-title" onClose={handleClose} >
+        //         Event
+        //     </DialogTitle>
 
-            <DialogContent classes={{root: classes.content}}>
-                <div>
-                    <Link href="/pre-event">
-                        <button className={styles.sectionButton}>
-                            Pre-Event
-                        </button>
-                    </Link>
-                    <Link href="/grand-summit">
-                        <button className={styles.sectionButton}>
-                            Grand Summit
-                        </button>
-                    </Link>
+        //     <DialogContent classes={{root: classes.content}}>
+        //         <div>
+        //             <Link href="/pre-event">
+        //                 <button className={styles.sectionButton}>
+        //                     Pre-Event
+        //                 </button>
+        //             </Link>
+        //             <Link href="/grand-summit">
+        //                 <button className={styles.sectionButton}>
+        //                     Grand Summit
+        //                 </button>
+        //             </Link>
                     
-                </div>
-            </DialogContent>
+        //         </div>
+        //     </DialogContent>
 
-            <MuiDialogTitle disableTypography className={styles.dialogTitle} >
-                Competition
-            </MuiDialogTitle>
+        //     <MuiDialogTitle disableTypography className={styles.dialogTitle} >
+        //         Competition
+        //     </MuiDialogTitle>
 
-            <DialogContent classes={{root: classes.content}}>
-                <div>
-                    <Link href="/main-comp">
-                        <button className={styles.sectionButton}>
-                            Main Competition
-                        </button>
-                    </Link>
-                    <Link href="/essay-comp">
-                        <button className={styles.sectionButton}>
-                            Essay Competition
-                        </button>
-                    </Link>
+        //     <DialogContent classes={{root: classes.content}}>
+        //         <div>
+        //             <Link href="/main-comp">
+        //                 <button className={styles.sectionButton}>
+        //                     Main Competition
+        //                 </button>
+        //             </Link>
+        //             <Link href="/essay-comp">
+        //                 <button className={styles.sectionButton}>
+        //                     Essay Competition
+        //                 </button>
+        //             </Link>
                     
-                </div>
+        //         </div>
                 
-            </DialogContent>
+        //     </DialogContent>
 
-            {
-                loginText === "LOGIN"
-                ?
-                <div>
-                    <button onClick={handleLoginOpen} className={styles.dialogButton}>
-                        {loginText}
-                    </button>
-                </div>
+        //     {
+        //         loginText === "LOGIN"
+        //         ?
+        //         <div>
+        //             <button onClick={handleLoginOpen} className={styles.dialogButton}>
+        //                 {loginText}
+        //             </button>
+        //         </div>
 
-                :
-                <Link href="/profile">
-                    <div>
-                        <button className={styles.dialogButton}>
-                            {truncateString(loginText)}
-                        </button>
-                    </div>
-                </Link>
-            }
+        //         :
+        //         <Link href="/profile">
+        //             <div>
+        //                 <button className={styles.dialogButton}>
+        //                     {truncateString(loginText)}
+        //                 </button>
+        //             </div>
+        //         </Link>
+        //     }
 
-        </Dialog>
+        // </Dialog>
     )
 }
 
