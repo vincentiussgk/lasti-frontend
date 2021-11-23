@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Campton Bold";
+  src: url("/fonts/Campton/CamptonBold.otf");
+  font-style: normal;
+  font-display: swap;
+}
